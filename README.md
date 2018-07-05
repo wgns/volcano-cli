@@ -1,7 +1,7 @@
 # volcano-cli
 
 ## About
-volcano-cli ... firebase stuff haha ChannelFix hackathon
+volcano-cli is a package that lets you host ... 
 
 ## Install
 ```console
