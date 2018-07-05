@@ -1,5 +1,8 @@
 # volcano-cli
 
+## About
+volcano-cli ... firebase stuff haha ChannelFix hackathon
+
 ## Install
 ```console
 $ npm install -g volcano-cli
