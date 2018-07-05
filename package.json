@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/wgns/volcano-cli#readme",
   "dependencies": {
+    "chalk": "^2.4.1",
     "serve": "^9.1.2",
     "serve-handler": "^3.2.3"
   }

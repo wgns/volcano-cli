@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const [,, ...args] = process.argv
+const chalk = require('chalk');
 
 // console.log(`${args}`)
 
@@ -17,4 +18,40 @@ if (args == "serve") {
     server.listen(port, () => {
       console.log('Running at http://localhost:' + port);
     });
+}
+
+if(args == "help") {
+	const log = console.log;
+	log(chalk.white('\n\t      (   (( . : (    .)   ) :  )\n')+                              
+        chalk.white('\t       (   ( :  .  :    :  )  ))\n')+                              
+        chalk.white('\t         ( ( ( (  .  :  . . ) )\n')+                                
+        chalk.white('\t          ( ( : :  :  )   )  )\n')+                                 
+        chalk.white('\t           ( :(   .   .  ) .\n')+                                  
+        chalk.white('\t             . :(   :    )\n')+                                     
+        chalk.white('\t              (   :  . )  )\n')+                                    
+        chalk.redBright('\t               )   :   #@##\n'+                                   
+        '\t              #,###  #@  #@#\n'+     
+        '\t             #/ @ # @#     ##\n'+     
+        '\t           ##  @@# @##@  `..@#\n'+                                 
+        '\t         @#  #@#   _##     `  #_\n' +                                 
+        '\t       @##;  `#~._.  ##@       #_\n'+                               
+        '\t     .-#/           @#@#@--,_,--/#\n'+                              
+        '\t    # @#@..,     .~###          `.#_\n'+                           
+        '\t  _#         -.- #@####@            # \n'+                          
+        '\t_#     &^^       ^#^##~##&&&   %    __#\n'));
+
+	log(chalk.bold('\nvolcano') + ' - A Hackathon project');
+	log('\n  ' + chalk.bold('USAGE\n'));
+	log('\t' + chalk.bold('$ ') + chalk.redBright('volcano') + ' serve\n');
+	log('\t' + chalk.bold('$ ') + chalk.redBright('volcano') + ' help\n');
+	log('\t' + chalk.bold('$ ') + chalk.redBright('volcano') + ' -v\n');
+	log('\t' + 'By default,' + chalk.redBright('volcano') + ' will provide a random port\n\n');
+	log('  ' + chalk.bold('OPTIONS\n'));
+	log('\t' + 'help\t\t\t' + 'Shows this help message');
+	log('\t' + '-v\t\t\t' + 'Displays the current version of volcano');
+	log('\t' + 'serve\t\t\t' + 'Provides a random port to host\n');
+}
+
+if(args == "-v") {
+	console.log('1.0.0');
 }
