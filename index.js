@@ -53,5 +53,5 @@ if(args == "help") {
 }
 
 if(args == "version") {
-	console.log('1.0.2');
+	console.log('1.0.4');
 }
