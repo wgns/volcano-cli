@@ -3,8 +3,6 @@
 const [,, ...args] = process.argv
 const chalk = require('chalk');
 
-// console.log(`${args}`)
-
 if (args == "serve") {
     const handler = require('serve-handler');
     const http = require('http');
@@ -18,9 +16,7 @@ if (args == "serve") {
     server.listen(port, () => {
       console.log('Running at http://localhost:' + port);
     });
-}
-
-if(args == "help") {
+} else if (args == "help") {
 	const log = console.log;
 	log(chalk.white('\n\t      (   (( . : (    .)   ) :  )\n')+
         chalk.white('\t       (   ( :  .  :    :  )  ))\n')+
@@ -50,8 +46,6 @@ if(args == "help") {
 	log('\t' + 'help\t\t\t' + 'Shows this help message');
 	log('\t' + 'version\t\t\t' + 'Displays the current version of volcano');
 	log('\t' + 'serve\t\t\t' + 'Provides a random port to host\n');
-}
-
-if(args == "version") {
-	console.log('1.0.4');
+} else if (args == "version") {
+	console.log('1.0.5');
 }
