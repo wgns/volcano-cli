@@ -1,0 +1,29 @@
+{
+  "name": "volcano-cli",
+  "version": "1.0.0",
+  "description": "hackathon stuff",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wgns/volcano-cli.git"
+  },
+  "keywords": [
+    "volcano"
+  ],
+  "author": "\"Wina <wina.sotto@gmail.com>",
+  "license": "ISC",
+  "bin": {
+    "volcano": "./index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/wgns/volcano-cli/issues"
+  },
+  "homepage": "https://github.com/wgns/volcano-cli#readme",
+  "dependencies": {
+    "serve": "^9.1.2",
+    "serve-handler": "^3.2.3"
+  }
+}
