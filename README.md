@@ -1,7 +1,7 @@
 # volcano-cli
 
 ## About
-volcano-cli is a package that lets you host ... 
+volcano-cli is a package that lets you host stuff ... ChannelFix Hackathon!
 
 ## Install
 ```console
