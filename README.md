@@ -15,11 +15,11 @@ $ volcano version
 
 ## Options
 
-`<serve>`       - provides a random port to host
+`serve`       - provides a random port to host
 
-`<help>`        - dislplays how the package can be used
+`help`        - dislplays how the package can be used
 
-`<version>`     - displays the current version of the installed package
+`version`     - displays the current version of the installed package
 
 ## Team
 
