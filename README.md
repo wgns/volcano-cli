@@ -2,12 +2,12 @@
 volcano-cli is a package that lets you host stuff ... ChannelFix Hackathon!
 
 ## Install
-```console
+```
 $ npm install -g volcano-cli
 ```
 
 ## Usage
-```console
+```
 $ volcano serve
 $ volcano help
 $ volcano version
@@ -15,10 +15,17 @@ $ volcano version
 
 ## Options
 
-```serve```       - provides a random port to host
+`<serve>`       - provides a random port to host
 
-```help```        - dislplays how the package can be used
+`<help>`        - dislplays how the package can be used
 
-```version```     - displays the current version of the installed package
+`<version>`     - displays the current version of the installed package
 
 ## Team
+
+Group 5
+
+* Balane, Arnelle
+* Encabo, Luke Christian
+* Mongil, Angelo
+* Sotto, Wina

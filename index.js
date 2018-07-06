@@ -8,13 +8,13 @@ if (args == "serve") {
     const http = require('http');
 
     const server = http.createServer((request, response) => {
-      return handler(request, response);
+        return handler(request, response);
     })
 
-    var port = Math.floor(Math.random() * (9000 - 3000 + 1) ) + 3000;
+    var port = Math.floor(Math.random() * (9000 - 3000 + 1)) + 3000;
 
     server.listen(port, () => {
-      console.log('Running at http://localhost:' + port);
+        console.log('Running at http://localhost:' + port);
     });
 } else if (args == "help") {
 	const log = console.log;
@@ -47,5 +47,5 @@ if (args == "serve") {
 	log('\t' + 'version\t\t\t' + 'Displays the current version of volcano');
 	log('\t' + 'serve\t\t\t' + 'Provides a random port to host\n');
 } else if (args == "version") {
-	console.log('1.0.5');
+	console.log('1.0.6');
 }
