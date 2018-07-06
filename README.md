@@ -1,6 +1,4 @@
 # volcano-cli
-
-## About
 volcano-cli is a package that lets you host stuff ... ChannelFix Hackathon!
 
 ## Install
@@ -22,3 +20,5 @@ $ volcano version
 ```help```        - dislplays how the package can be used
 
 ```version```     - displays the current version of the installed package
+
+## Team
