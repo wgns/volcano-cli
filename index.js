@@ -18,34 +18,36 @@ if (args == "serve") {
     });
 } else if (args == "help") {
 	const log = console.log;
-	log(chalk.white('\n\t      (   (( . : (    .)   ) :  )\n')+
-        chalk.white('\t       (   ( :  .  :    :  )  ))\n')+
-        chalk.white('\t         ( ( ( (  .  :  . . ) )\n')+
-        chalk.white('\t          ( ( : :  :  )   )  )\n')+
-        chalk.white('\t           ( :(   .   .  ) .\n')+
-        chalk.white('\t             . :(   :    )\n')+
-        chalk.white('\t              (   :  . )  )\n')+
-        chalk.redBright('\t               )   :   #@##\n'+
+	log(chalk.white('\n\t      (   (( . : (    .)   ) :  )\n'+
+        '\t       (   ( :  .  :    :  )  ))\n'+
+        '\t         ( ( ( (  .  :  . . ) )\n'+
+        '\t          ( ( : :  :  )   )  )\n'+
+        '\t           ( :(   .   .  ) .\n'+
+        '\t             . :(   :    )\n'+
+        '\t              (   :  . )  )\n')+
+        '\t               (   :   ' + chalk.redBright('#@##\n'+
         '\t              #,###  #@  #@#\n'+
         '\t             #/ @ # @#     ##\n'+
         '\t           ##  @@# @##@  `..@#\n'+
         '\t         @#  #@#   _##     `  #_\n' +
-        '\t       @##;  `#~._.  ##@       #_\n'+
-        '\t     .-#/           @#@#@--,_,--/#\n'+
-        '\t    # @#@..,     .~###          `.#_\n'+
-        '\t  _#         -.- #@####@            # \n'+
-        '\t_#     &^^       ^#^##~##&&&   %    __#\n'));
+        '\t       @##;  `#~._.  ##@        #_\n'+
+        '\t     .-#/           @#@#@--,_,--/ \\\n'+
+        '\t    # @#@..,     .~###          `. #_\n'+
+        '\t  _#         -.- #@####@             \\_\n'+
+        '\t_/     &^^       ^#^##~##&&&   %       \\_\n'));
 
-	log(chalk.bold('\nvolcano') + ' - A Hackathon project');
-	log('\n  ' + chalk.bold('USAGE\n'));
-	log('\t' + chalk.bold('$ ') + chalk.redBright('volcano') + ' serve\n');
-	log('\t' + chalk.bold('$ ') + chalk.redBright('volcano') + ' help\n');
-	log('\t' + chalk.bold('$ ') + chalk.redBright('volcano') + ' version\n');
-	log('\t' + 'By default,' + chalk.redBright('volcano') + ' will provide a random port\n\n');
-	log('  ' + chalk.bold('OPTIONS\n'));
-	log('\t' + 'help\t\t\t' + 'Shows this help message');
-	log('\t' + 'version\t\t\t' + 'Displays the current version of volcano');
-	log('\t' + 'serve\t\t\t' + 'Provides a random port to host\n');
+	log(chalk.bold('\n volcano') + ' - A Hackathon project\n\n' + chalk.bold(' USAGE\n') +
+	   '\t' + chalk.bold('$ ') + chalk.redBright('volcano') + ' serve\n' +
+	   '\t' + chalk.bold('$ ') + chalk.redBright('volcano') + ' help\n' +
+	   '\t' + chalk.bold('$ ') + chalk.redBright('volcano') + ' version\n\n' +
+	   '\t' + 'By default, ' + chalk.redBright('volcano') + ' will provide a random port\n\n' +
+	   chalk.bold(' OPTIONS\n') +
+	   '\thelp\t\t\tShows this help message\n' +
+	   '\tversion\t\t\tDisplays the current version of volcano\n' +
+	   '\tserve\t\t\tProvides a random port to host');
 } else if (args == "version") {
-	console.log('1.0.6');
+	console.log('1.0.7');
+} else {
+    console.log('usage:\t  volcano [serve] [help] [version]\n\nThese are the only ' + 
+        chalk.redBright('volcano') + ' commands available.');
 }
